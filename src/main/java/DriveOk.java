@@ -2,12 +2,11 @@ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import processors.MessageProcessor;
 
-public class NanoDedBot extends TelegramLongPollingBot {
+public class DriveOk extends TelegramLongPollingBot {
     private MessageProcessor messageProcessor;
 
-    NanoDedBot(MessageProcessor messageProcessor) {
+    DriveOk(MessageProcessor messageProcessor) {
         this.messageProcessor = messageProcessor;
     }
 
@@ -23,11 +22,11 @@ public class NanoDedBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return "NanoDedBot";
+        return "DriveOK_od";
     }
 
     @Override
     public String getBotToken() {
-        return "807382426:AAEfAoJknJ1SR3PVK3shfqlD5xzfuhiYrMQ";
+        return "802044498:AAGhKmmBpTOgsfF7hFCi8L8VMTf6QTkyBIU";
     }
 }
